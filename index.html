@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitGood — We Build. We Teach. We Improve.</title>
+  <meta name="description" content="GitGood is a technology brand focused on software development, artificial intelligence, data, and practical technology education — building projects, teaching, and exploring what's next.">
+  <meta name="theme-color" content="#0e0e10">
+  <link rel="canonical" href="https://gitgood.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GitGood">
+  <meta property="og:title" content="GitGood — We Build. We Teach. We Improve.">
+  <meta property="og:description" content="GitGood is a technology brand focused on software, artificial intelligence, data, and practical technology education.">
+  <meta property="og:url" content="https://gitgood.io/">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    (function () {
+      var l = null;
+      try { l = localStorage.getItem('gitgood-lang'); } catch (e) {}
+      if (!(l === 'ar' || l === 'en')) {
+        l = (navigator.language && navigator.language.toLowerCase().indexOf('ar') === 0) ? 'ar' : 'en';
+      }
+      if (l === 'ar') {
+        document.documentElement.lang = 'ar';
+        document.documentElement.dir = 'rtl';
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a class="brand" href="#top" aria-label="GitGood — home" data-i18n-attr="aria-label" data-i18n-attr-key="brand-aria">
+        <img src="assets/images/gitgood-logo.png" alt="GitGood logo" width="30" height="30" class="brand-mark">
+        <span class="brand-name">GitGood</span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="#home" class="nav-link is-active" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="#events" class="nav-link" data-i18n="nav.events">Events</a>
+        <button type="button" class="lang-toggle" data-lang-toggle>العربية</button>
+        <a href="https://wa.me/213671730438" target="_blank" rel="noopener" class="btn btn-primary btn-sm nav-cta" data-i18n="work-with-us">Work With Us</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker kicker-dark" data-i18n="hero-kicker">Software · AI · Data · Education</p>
+          <h1 data-i18n-html="hero-title">We Build. We Teach. <em>We Improve.</em></h1>
+          <p class="hero-sub" data-i18n="hero-sub">
+            GitGood is a technology brand focused on software, artificial intelligence, data,
+            and practical technology education.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-i18n="explore-our-work">Explore Our Work</a>
+            <a href="https://wa.me/213671730438" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="work-with-us">Work With Us</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="panel">
+            <div class="panel-bar">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="panel-title" aria-hidden="true">gitgood</span>
+            </div>
+            <div class="panel-body">
+              <img
+                src="assets/images/gitgood-logo.png"
+                alt="GitGood logo"
+                width="200"
+                height="200"
+                class="panel-logo"
+                loading="eager"
+                fetchpriority="high">
+              <p class="panel-cmd" aria-hidden="true" data-i18n="panel-cmd">&gt; learn. build. improve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container about-inner">
+        <div class="about-copy">
+          <p class="kicker" data-i18n="about-kicker">About</p>
+          <h2 data-i18n="about-title">What is GitGood?</h2>
+          <p data-i18n="about-p1">
+            GitGood is a technology-focused initiative built around software development,
+            artificial intelligence, data, and education.
+          </p>
+          <p data-i18n="about-p2">
+            We create projects, deliver practical training, organize technical events,
+            and explore new technologies.
+          </p>
+          <p data-i18n-html="about-p3"><span class="accent">Technology, learning, and real building — connected.</span></p>
+        </div>
+
+        <div class="mascots">
+          <figure class="mascot reveal">
+            <img src="assets/images/foxy.png" alt="Foxy, GitGood's fox mascot representing programming and developer culture" width="140" height="140" loading="lazy">
+            <figcaption><strong>Foxy</strong><span data-i18n="mascot-foxy-desc">Programming &amp; developer culture</span></figcaption>
+          </figure>
+          <figure class="mascot reveal">
+            <img src="assets/images/owlix.png" alt="Owlix, GitGood's owl mascot representing AI, data, and knowledge" width="140" height="140" loading="lazy">
+            <figcaption><strong>Owlix</strong><span data-i18n="mascot-owlix-desc">AI, data &amp; knowledge</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="svc-kicker">Services</p>
+          <h2 data-i18n="svc-title">What We Do</h2>
+          <p class="section-sub" data-i18n="svc-sub">From building software to teaching the technologies behind it, GitGood turns technical knowledge into practical solutions.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="card service reveal">
+            <p class="card-tag" data-i18n="svc1-tag">01 · software development</p>
+            <h3 data-i18n="svc1-title">Software Development</h3>
+            <p data-i18n="svc1-desc">Design and develop modern software applications and digital solutions.</p>
+            <ul class="service-list">
+              <li data-i18n="svc1-l1">Web Development</li>
+              <li data-i18n="svc1-l2">Desktop Applications</li>
+              <li data-i18n="svc1-l3">Automation</li>
+              <li data-i18n="svc1-l4">Software Engineering</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <p class="card-tag" data-i18n="svc2-tag">02 · artificial intelligence</p>
+            <h3 data-i18n="svc2-title">Artificial Intelligence</h3>
+            <p data-i18n="svc2-desc">Explore and build practical AI solutions.</p>
+            <ul class="service-list">
+              <li data-i18n="svc2-l1">Machine Learning</li>
+              <li data-i18n="svc2-l2">Computer Vision</li>
+              <li data-i18n="svc2-l3">Natural Language Processing</li>
+              <li data-i18n="svc2-l4">AI Experiments</li>
+              <li data-i18n="svc2-l5">AI Applications</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <p class="card-tag" data-i18n="svc3-tag">03 · data &amp; analytics</p>
+            <h3 data-i18n="svc3-title">Data &amp; Analytics</h3>
+            <p data-i18n="svc3-desc">Turn data into useful insights and interactive experiences.</p>
+            <ul class="service-list">
+              <li data-i18n="svc3-l1">Data Analysis</li>
+              <li data-i18n="svc3-l2">Data Visualization</li>
+              <li data-i18n="svc3-l3">Business Intelligence</li>
+              <li data-i18n="svc3-l4">Machine Learning</li>
+              <li data-i18n="svc3-l5">Data Science</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <p class="card-tag" data-i18n="svc4-tag">04 · technical training</p>
+            <h3 data-i18n="svc4-title">Technical Training</h3>
+            <p data-i18n="svc4-desc">Practical technology education designed around real tools and projects.</p>
+            <ul class="service-list">
+              <li data-i18n="svc4-l1">Programming</li>
+              <li data-i18n="svc4-l2">AI</li>
+              <li data-i18n="svc4-l3">Data</li>
+              <li data-i18n="svc4-l4">Developer Tools</li>
+              <li data-i18n="svc4-l5">Workshops</li>
+              <li data-i18n="svc4-l6">Bootcamps</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <p class="card-tag" data-i18n="svc5-tag">05 · workshops &amp; events</p>
+            <h3 data-i18n="svc5-title">Workshops &amp; Events</h3>
+            <p data-i18n="svc5-desc">Organize technical events that bring students and technology enthusiasts together.</p>
+            <ul class="service-list">
+              <li data-i18n="svc5-l1">Technical Workshops</li>
+              <li data-i18n="svc5-l2">Bootcamps</li>
+              <li data-i18n="svc5-l3">Talks</li>
+              <li data-i18n="svc5-l4">Hands-on Sessions</li>
+              <li data-i18n="svc5-l5">Student Events</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="sk-kicker">Skills &amp; Technologies</p>
+          <h2 data-i18n="sk-title">Technologies We Work With</h2>
+          <p class="section-sub" data-i18n="sk-sub">The languages, libraries, and tools behind our projects and training.</p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-cat reveal">
+            <p class="skill-tag" data-i18n="sk-cat-programming">Programming</p>
+            <ul class="skill-list">
+              <li>Python</li><li>Java</li><li>C</li><li>C++</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-cat reveal">
+            <p class="skill-tag" data-i18n="sk-cat-ai">AI &amp; Machine Learning</p>
+            <ul class="skill-list">
+              <li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>OpenCV</li><li>NLP</li>
+            </ul>
+          </div>
+          <div class="skill-cat reveal">
+            <p class="skill-tag" data-i18n="sk-cat-data">Data</p>
+            <ul class="skill-list">
+              <li>Power BI</li><li>Python</li><li>Pandas</li><li>NumPy</li><li>KNIME</li><li>Looker Studio</li><li>Orange</li>
+            </ul>
+          </div>
+          <div class="skill-cat reveal">
+            <p class="skill-tag" data-i18n="sk-cat-web">Web</p>
+            <ul class="skill-list">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Django</li>
+            </ul>
+          </div>
+          <div class="skill-cat reveal">
+            <p class="skill-tag" data-i18n="sk-cat-tools">Tools</p>
+            <ul class="skill-list">
+              <li>Git</li><li>GitHub</li><li>Linux</li><li>Docker</li><li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt projects" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="pj-kicker">Projects</p>
+          <h2 data-i18n="pj-title">What We've Built</h2>
+          <p class="section-sub" data-i18n="pj-sub">We believe the best way to understand technology is to build with it.</p>
+        </div>
+
+        <article class="project featured reveal">
+          <p class="card-tag" data-i18n="featured-tag">featured experiment</p>
+          <h3>GitGPT</h3>
+          <p data-i18n="gitgpt-desc">A tiny language model experiment built from scratch to explore how language models work.</p>
+          <ul class="tech-list" aria-label="Technologies used" data-i18n-attr="aria-label" data-i18n-attr-key="techs-label">
+            <li>Python</li>
+            <li>NumPy</li>
+          </ul>
+          <p class="project-cmd" aria-hidden="true">$ git gpt --from-scratch</p>
+          <div class="project-actions">
+            <button type="button" class="btn btn-outline btn-sm" disabled title="Coming soon" data-i18n="src-btn" data-i18n-attr="title" data-i18n-attr-key="coming-soon">Source</button>
+            <button type="button" class="btn btn-outline btn-sm" disabled title="Coming soon" data-i18n="demo-btn" data-i18n-attr="title" data-i18n-attr-key="coming-soon">Demo</button>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project reveal">
+            <p class="card-tag" data-i18n="pj-ai-tag">ai · experiments</p>
+            <h3 data-i18n="pj-ai-title">AI Experiments</h3>
+            <p data-i18n="pj-ai-desc">Experiments exploring artificial intelligence, machine learning, and emerging technologies.</p>
+            <ul class="tech-list" aria-label="Technologies used" data-i18n-attr="aria-label" data-i18n-attr-key="techs-label">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>OpenCV</li>
+            </ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-outline btn-sm" disabled title="Coming soon" data-i18n="src-btn" data-i18n-attr="title" data-i18n-attr-key="coming-soon">Source</button>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <p class="card-tag" data-i18n="pj-data-tag">data · analytics</p>
+            <h3 data-i18n="pj-data-title">Data Projects</h3>
+            <p data-i18n="pj-data-desc">Practical projects involving data analysis, visualization, and machine learning.</p>
+            <ul class="tech-list" aria-label="Technologies used" data-i18n-attr="aria-label" data-i18n-attr-key="techs-label">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Power BI</li>
+            </ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-outline btn-sm" disabled title="Coming soon" data-i18n="src-btn" data-i18n-attr="title" data-i18n-attr-key="coming-soon">Source</button>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <p class="card-tag" data-i18n="pj-tools-tag">tools · utilities</p>
+            <h3 data-i18n="pj-tools-title">Developer Tools</h3>
+            <p data-i18n="pj-tools-desc">Small tools and applications created to solve practical problems.</p>
+            <ul class="tech-list" aria-label="Technologies used" data-i18n-attr="aria-label" data-i18n-attr-key="techs-label">
+              <li>Python</li>
+              <li>Git</li>
+              <li>Docker</li>
+            </ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-outline btn-sm" disabled title="Coming soon" data-i18n="src-btn" data-i18n-attr="title" data-i18n-attr-key="coming-soon">Source</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events & Training -->
+    <section class="section events" id="events">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="ev-kicker">Events &amp; Training</p>
+          <h2 data-i18n="ev-title">Events &amp; Training</h2>
+          <p class="section-sub" data-i18n="ev-sub">We bring technology closer to students through practical workshops, bootcamps, and hands-on learning experiences.</p>
+        </div>
+
+        <div class="event-feature reveal">
+          <div class="event-head">
+            <p class="badge" data-i18n="ev-badge">Bootcamp</p>
+            <div class="event-meta" aria-label="Event details">
+              <span class="event-meta-pill" data-i18n="ev-date">September 2026</span>
+              <span class="event-meta-pill" data-i18n="ev-location">Skills Center of Setif</span>
+            </div>
+          </div>
+          <h3 data-i18n="ev-feature-title">DataGood — Data &amp; AI Tools Bootcamp</h3>
+          <p class="event-desc" data-i18n="ev-desc">
+            A practical bootcamp introducing students to modern tools for data analysis,
+            visualization, data science, and machine learning.
+          </p>
+
+          <div class="sessions">
+            <article class="session">
+              <p class="session-num" data-i18n="session-1">Session 01</p>
+              <h4>Power BI</h4>
+              <p class="session-desc" data-i18n="s1-desc">Data Analysis &amp; Interactive Dashboards</p>
+            </article>
+            <article class="session">
+              <p class="session-num" data-i18n="session-2">Session 02</p>
+              <h4>KNIME</h4>
+              <p class="session-desc" data-i18n="s2-desc">Data Science &amp; Machine Learning</p>
+            </article>
+            <article class="session">
+              <p class="session-num" data-i18n="session-3">Session 03</p>
+              <h4>Looker Studio</h4>
+              <p class="session-desc" data-i18n="s3-desc">Data Visualization &amp; Interactive Reports</p>
+            </article>
+            <article class="session">
+              <p class="session-num" data-i18n="session-4">Session 04</p>
+              <h4>Orange</h4>
+              <p class="session-desc" data-i18n="s4-desc">Machine Learning &amp; Model Evaluation</p>
+            </article>
+          </div>
+
+          <div class="event-actions">
+            <a href="#" class="btn btn-primary" data-i18n="view-events">View Events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="section section-dark approach" id="approach">
+      <div class="container">
+        <div class="section-head section-head-dark">
+          <p class="kicker kicker-dark" data-i18n="ap-kicker">Our Approach</p>
+          <h2 data-i18n-html="ap-title">Learn. Build. <span class="accent">Improve.</span></h2>
+          <p class="section-sub" data-i18n="ap-sub">A simple philosophy that connects what we build, what we teach, and what we explore.</p>
+        </div>
+
+        <div class="concepts">
+          <article class="concept reveal">
+            <p class="concept-num">01</p>
+            <h3 data-i18n="ap1-title">Learn</h3>
+            <p data-i18n="ap1-desc">Understand the technology.</p>
+          </article>
+          <article class="concept reveal">
+            <p class="concept-num">02</p>
+            <h3 data-i18n="ap2-title">Build</h3>
+            <p data-i18n="ap2-desc">Turn knowledge into real projects.</p>
+          </article>
+          <article class="concept reveal">
+            <p class="concept-num">03</p>
+            <h3 data-i18n="ap3-title">Improve</h3>
+            <p data-i18n="ap3-desc">Experiment, iterate, and keep getting better.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why GitGood -->
+    <section class="section section-alt why" id="why">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="why-kicker">Why GitGood</p>
+          <h2 data-i18n="why-title">Why GitGood?</h2>
+          <p class="section-sub" data-i18n="why-sub">What makes GitGood different.</p>
+        </div>
+
+        <div class="reasons">
+          <div class="reason">
+            <p class="reason-tag" data-i18n="why1-tag">01 · practical</p>
+            <h3 data-i18n="why1-title">Practical</h3>
+            <p data-i18n="why1-desc">We focus on real tools, projects, and hands-on experience.</p>
+          </div>
+          <div class="reason">
+            <p class="reason-tag" data-i18n="why2-tag">02 · technical</p>
+            <h3 data-i18n="why2-title">Technical</h3>
+            <p data-i18n="why2-desc">Our work is grounded in software engineering, AI, data, and computer science.</p>
+          </div>
+          <div class="reason">
+            <p class="reason-tag" data-i18n="why3-tag">03 · student-focused</p>
+            <h3 data-i18n="why3-title">Student-Focused</h3>
+            <p data-i18n="why3-desc">We make technology more accessible to students and young developers.</p>
+          </div>
+          <div class="reason">
+            <p class="reason-tag" data-i18n="why4-tag">04 · curious</p>
+            <h3 data-i18n="why4-title">Curious</h3>
+            <p data-i18n="why4-desc">We experiment with new technologies and constantly explore what's next.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta section-dark" id="cta">
+      <div class="container cta-inner">
+        <h2 data-i18n="cta-title">Have an idea?</h2>
+        <p data-i18n="cta-sub">Let's build something with technology.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/213671730438" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="work-with-us">Work With Us</a>
+          <a href="#projects" class="btn btn-ghost btn-lg" data-i18n="explore-our-work">Explore Our Work</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand brand-dark" href="#top" aria-label="GitGood — back to top" data-i18n-attr="aria-label" data-i18n-attr-key="footer-brand-aria">
+          <img src="assets/images/gitgood-logo.png" alt="GitGood logo" width="28" height="28" class="brand-mark">
+          <span class="brand-name">GitGood</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer-tagline">Learn. Build. Improve.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#events" data-i18n="nav.events">Events</a>
+      </nav>
+
+      <div class="footer-social">
+        <p class="footer-social-title" data-i18n="footer-follow">Follow us</p>
+        <nav class="footer-social-links" aria-label="Social media">
+          <a href="https://www.instagram.com/gitgood.io/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@gitgood.io" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.facebook.com/profile.php?id=61588540706402" target="_blank" rel="noopener">Facebook</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p data-i18n="copyright">&copy; 2026 GitGood. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
