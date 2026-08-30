@@ -678,3 +678,232 @@ h4{font-size:19px}
 [dir="rtl"] .footer-tagline,
 [dir="rtl"] .footer-social-title,
 [dir="rtl"] .panel-title{letter-spacing:0}
+
+/* ===== Event detail page (Events/DataGood) ===== */
+
+.dg-hero .event-meta{margin-top:28px}
+.dg-hero-meta{display:flex;align-items:center}
+.event-meta-pill-dark{
+  border-color:rgba(255,255,255,.28);
+  color:var(--text-dark-muted);
+  background:rgba(255,255,255,.04);
+}
+.dg-hero-tagline{
+  font-family:var(--mono);
+  font-size:13.5px;
+  letter-spacing:.02em;
+  color:var(--brand-light);
+  margin-top:26px;
+}
+.event-poster{width:100%;height:auto;border-radius:10px;background:var(--bg-alt)}
+
+.dg-panel{
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  padding:clamp(24px,4vw,40px);
+}
+
+.dg-para{color:var(--muted);font-size:15.5px;line-height:1.65}
+.dg-para + .dg-para{margin-top:14px}
+.dg-para-lg{font-size:17px;color:var(--ink)}
+.dg-para-dark{color:var(--text-dark-muted)}
+.dg-closing{margin-top:clamp(32px,4vw,44px);font-weight:600;color:var(--ink)}
+
+.dg-tools{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin:20px 0 6px;
+}
+.dg-tools li{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:14px 18px;
+  font-size:15px;
+  color:var(--ink);
+  background:var(--bg-alt);
+}
+.dg-tools li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand);flex:none}
+
+.dg-goal{
+  margin-top:clamp(28px,4vw,40px);
+  display:flex;
+  gap:clamp(20px,4vw,56px);
+  align-items:baseline;
+  flex-wrap:wrap;
+}
+.dg-goal-label{font-family:var(--display);font-weight:700;font-size:clamp(1.15rem,2vw,1.35rem)}
+
+.check-list{display:flex;flex-direction:column;gap:10px}
+.check-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  color:var(--ink);
+  font-size:15.5px;
+  line-height:1.55;
+}
+.check-list li::before{
+  content:"✓";
+  flex:none;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:var(--brand-soft);
+  color:var(--brand);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+  font-weight:700;
+  margin-top:1px;
+}
+.dg-check-list{margin-top:16px}
+
+.dg-card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.dg-card{
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--line);
+  border-top:3px solid var(--brand);
+  border-radius:16px;
+  background:#fff;
+  padding:clamp(22px,3vw,30px);
+}
+.dg-card-num{
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--brand);
+}
+.dg-card h3{font-size:clamp(1.25rem,2vw,1.5rem);margin:12px 0 4px}
+.dg-card-sub{
+  font-family:var(--mono);
+  font-size:12.5px;
+  letter-spacing:.02em;
+  color:var(--muted);
+}
+.dg-card .dg-para{margin-top:14px}
+.dg-bullets{margin-top:16px}
+.dg-note{
+  font-family:var(--mono);
+  font-size:12.5px;
+  letter-spacing:.02em;
+  color:var(--muted);
+  border-inline-start:3px solid var(--brand);
+  background:var(--brand-soft);
+  border-radius:8px;
+  padding:10px 14px;
+  margin-top:16px;
+}
+
+.dg-split{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:clamp(28px,5vw,64px);
+  align-items:center;
+}
+.dg-gate{
+  background:var(--dark);
+  color:var(--text-dark);
+  border-radius:16px;
+  padding:clamp(24px,3.5vw,36px);
+}
+.dg-gate .dg-para{color:var(--text-dark-muted)}
+.dg-gate-title{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(1.5rem,3vw,2rem);
+  color:var(--brand-light);
+  margin-bottom:8px;
+}
+
+.dg-instructor-panel{display:flex;align-items:flex-start;gap:clamp(20px,3vw,32px)}
+.dg-avatar-img{
+  flex:none;
+  width:clamp(110px,16vw,160px);
+  height:clamp(110px,16vw,160px);
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid var(--line);
+  background:var(--bg-alt);
+}
+.dg-instructor-role{font-family:var(--mono);font-size:13px;color:var(--brand);margin-top:4px}
+.dg-instructor-copy .dg-para{margin-top:16px}
+
+.dg-table-wrap{
+  overflow-x:auto;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  box-shadow:var(--shadow-sm);
+}
+.dg-table{width:100%;border-collapse:collapse;min-width:540px}
+.dg-table th,.dg-table td{padding:15px 20px;text-align:start;border-bottom:1px solid var(--line);font-size:15px}
+.dg-table thead th{
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  background:var(--bg-alt);
+}
+.dg-table tbody tr{transition:background-color .2s ease}
+.dg-table tbody tr:hover{background:var(--bg-alt)}
+.dg-table tbody tr:last-child td{border-bottom:none}
+.dg-tool{font-weight:600;color:var(--ink)}
+
+.dg-loc-card{position:relative;text-align:center;padding:clamp(28px,4vw,44px)}
+.dg-loc-pin{font-size:clamp(2rem,4vw,3rem);line-height:1}
+.dg-loc-name{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,2.4vw,1.7rem);margin:14px 0 6px}
+.dg-loc-btn{margin-top:20px}
+
+.dg-get-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(20px,3vw,40px)}
+.dg-get-list{gap:14px}
+
+.dg-organizer{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:clamp(28px,5vw,64px);
+  align-items:center;
+}
+.dg-organizer-logo{display:flex;justify-content:center}
+.dg-organizer-logo img{
+  width:clamp(140px,18vw,220px);
+  height:auto;
+  background:#fff;
+  border-radius:24px;
+  padding:18px;
+}
+
+.dg-philosophy{text-align:center}
+.dg-philosophy .section-head{margin-inline:auto;margin-bottom:0}
+.dg-words{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:clamp(14px,3vw,28px);
+  margin-top:clamp(32px,4vw,48px);
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(2.2rem,7vw,4.2rem);
+  color:var(--ink);
+}
+.dg-words .accent{color:var(--brand)}
+
+@media (max-width:880px){
+  .dg-card-grid{grid-template-columns:1fr}
+  .dg-split{grid-template-columns:1fr}
+  .dg-tools{grid-template-columns:1fr}
+  .dg-get-grid{grid-template-columns:1fr}
+  .dg-organizer{grid-template-columns:1fr}
+  .dg-organizer-logo{order:-1}
+  .dg-instructor-panel{flex-direction:column}
+}
