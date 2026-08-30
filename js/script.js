@@ -1,6 +1,22 @@
 (function () {
   'use strict';
 
+  var noticeBar = document.getElementById('eventNotice');
+  var noticeClose = document.querySelector('[data-notice-close]');
+  var NOTICE_KEY = 'gitgood-notice-dismissed';
+
+  if (noticeBar && noticeClose) {
+    var noticeDismissed = false;
+    try { noticeDismissed = localStorage.getItem(NOTICE_KEY) === '1'; } catch (e) {}
+    if (noticeDismissed) {
+      noticeBar.classList.add('is-hidden');
+    }
+    noticeClose.addEventListener('click', function () {
+      noticeBar.classList.add('is-hidden');
+      try { localStorage.setItem(NOTICE_KEY, '1'); } catch (e) {}
+    });
+  }
+
   var header = document.querySelector('.site-header');
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('siteNav');
